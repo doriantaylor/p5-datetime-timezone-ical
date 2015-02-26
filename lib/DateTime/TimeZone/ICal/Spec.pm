@@ -1,4 +1,4 @@
-package DateTime::TimeZone::ICal::Part;
+package DateTime::TimeZone::ICal::Spec;
 
 use 5.006;
 use strict;
@@ -6,7 +6,7 @@ use warnings;
 
 =head1 NAME
 
-DateTime::TimeZone::ICal::Part - The great new DateTime::TimeZone::ICal::Part!
+DateTime::TimeZone::ICal::Spec - The great new DateTime::TimeZone::ICal::Spec!
 
 =head1 VERSION
 
@@ -23,9 +23,9 @@ Quick summary of what the module does.
 
 Perhaps a little code snippet.
 
-    use DateTime::TimeZone::ICal::Part;
+    use DateTime::TimeZone::ICal::Spec;
 
-    my $foo = DateTime::TimeZone::ICal::Part->new();
+    my $foo = DateTime::TimeZone::ICal::Spec->new();
     ...
 
 =head1 EXPORT
@@ -66,7 +66,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc DateTime::TimeZone::ICal::Part
+    perldoc DateTime::TimeZone::ICal::Spec
 
 
 You can also look for information at:
@@ -114,4 +114,4 @@ limitations under the License.
 
 =cut
 
-1; # End of DateTime::TimeZone::ICal::Part
+1; # End of DateTime::TimeZone::ICal::Spec
