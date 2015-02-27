@@ -107,6 +107,10 @@ This module overrides the following methods:
 
 =item
 
+L<name|DateTime::TimeZone/name>
+
+=item
+
 L<category|DateTime::TimeZone/category>
 
 =cut
@@ -315,7 +319,7 @@ has name => (
 This is an C<ARRAY> reference of L<DateTime::TimeZone::ICal::Spec>
 instances, or otherwise of C<HASH> references congruent to that
 module's constructor, which will be coerced into said objects. This
-parameter is I<required>, and there must be L<at least> one member in
+parameter is I<required>, and there must be I<at least> one member in
 the C<ARRAY>.
 
 =cut
