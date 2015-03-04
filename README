@@ -2,7 +2,7 @@ NAME
     DateTime::TimeZone::ICal - iCal VTIMEZONE entry to DateTime::TimeZone
 
 VERSION
-    Version 0.01
+    Version 0.02
 
 SYNOPSIS
         use Data::ICal;
@@ -68,6 +68,8 @@ METHODS
 
     This module overrides the following methods:
 
+    *   name
+
     *   category
 
     *   is_floating
@@ -100,7 +102,7 @@ METHODS
         This is an "ARRAY" reference of DateTime::TimeZone::ICal::Spec
         instances, or otherwise of "HASH" references congruent to that
         module's constructor, which will be coerced into said objects. This
-        parameter is *required*, and there must be "at least" one member in
+        parameter is *required*, and there must be *at least* one member in
         the "ARRAY".
 
     daylight
