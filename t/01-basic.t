@@ -38,20 +38,27 @@ SKIP: {
 
     my $tz = DateTime::TimeZone::ICal->from_ical_entry($tz{$k});
 
-    isa_ok($tz, 'DateTime::TimeZone::ICal');
-
-    #require Data::Dumper;
-    #local $Data::Dumper::Indent = 1;
-    #diag(Data::Dumper::Dumper($tz));
-
     my $now = DateTime->now;
 
-    diag($tz->standard->[0]->dtstart);
-    diag($tz->daylight->[0]->recurrence->min);
+    if (isa_ok($tz, 'DateTime::TimeZone::ICal')) {
 
+        #require Data::Dumper;
+        #local $Data::Dumper::Indent = 1;
+        #diag(Data::Dumper::Dumper($tz));
+
+
+        diag($tz->standard->[0]->dtstart);
+        diag($tz->daylight->[0]->recurrence->min);
+
+    }
     is($tz->is_dst_for_datetime($now), $now->is_dst, 'DST matches');
 
     diag($tz->offset_for_datetime($now));
+
+    $now->set_time_zone($tz);
+    require DateTime::Format::W3CDTF;
+    my $dtf = DateTime::Format::W3CDTF->new;
+    diag($dtf->format_datetime($now));
 
     # for my $entry (@{$tz{$k}->entries}) {
     #     my $rrule = $entry->property('rrule')->[0];
