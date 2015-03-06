@@ -14,5 +14,20 @@ my $min_pc = 0.18;
 eval "use Pod::Coverage $min_pc";
 plan skip_all => "Pod::Coverage $min_pc required for testing POD coverage"
     if $@;
+my $trustme = [qr/^(?:BUILD|category|name|is_(?:floating|olson|utc)|
+has_dst_changes|(?:is_dst|offset|short_name)_for(?:_local)?_datetime)$/x];
 
-all_pod_coverage_ok();
+#       BUILD
+#       category
+#       has_dst_changes
+#       is_dst_for_datetime
+#       is_floating
+#       is_olson
+#       is_utc
+#       name
+#       offset_for_datetime
+#       offset_for_local_datetime
+#       short_name_for_datetime
+
+
+all_pod_coverage_ok({ trustme => $trustme });

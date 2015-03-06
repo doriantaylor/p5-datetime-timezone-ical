@@ -50,7 +50,7 @@ TODO: {
   );
 
   module_boilerplate_ok('lib/DateTime/TimeZone/ICal.pm');
-  module_boilerplate_ok('lib/DateTime/TimeZone/ICal/Part.pm');
+  module_boilerplate_ok('lib/DateTime/TimeZone/ICal/Spec.pm');
   module_boilerplate_ok('lib/DateTime/TimeZone/ICal/Parsing.pm');
 
 

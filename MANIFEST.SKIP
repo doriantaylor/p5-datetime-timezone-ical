@@ -106,6 +106,9 @@
 ^inc/Module/Install/Repository.pm$
 ^inc/Module/Install/TestBase.pm$
 
+# boilerplate tests
+^t/(pod|pod-coverage|boilerplate|manifest)\.t$
+
 # output
 root/static/.*
 nytprof\.out$
