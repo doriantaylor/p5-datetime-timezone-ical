@@ -13,7 +13,6 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/DateTime/TimeZone/ICal.pm
 lib/DateTime/TimeZone/ICal/Parsing.pm
-lib/DateTime/TimeZone/ICal/Part.pm
 lib/DateTime/TimeZone/ICal/Spec.pm
 Makefile.PL
 MANIFEST			This list of files

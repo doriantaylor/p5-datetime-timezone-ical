@@ -2,7 +2,7 @@ NAME
     DateTime::TimeZone::ICal - iCal VTIMEZONE entry to DateTime::TimeZone
 
 VERSION
-    Version 0.03
+    Version 0.04
 
 SYNOPSIS
         use Data::ICal;
